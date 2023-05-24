@@ -1,6 +1,6 @@
 function openGitHub(e){
     e.stopPropagation();
-    window.open("https://github.com/HarmOnGitHub",'_blank');
+    window.open("https://github.com/HarmOnGitHub/HarmOS",'_blank');
 }
 
 function openYouTube(e){
