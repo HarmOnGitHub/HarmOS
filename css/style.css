@@ -1,0 +1,207 @@
+:root{
+    --bg: url('../res/tomofanatic.jpg') center center / cover no-repeat fixed;
+    --gray-double-gradient: linear-gradient(rgb(15, 15, 15) 0px, rgb(39, 39, 39) 50%, rgb(15, 15, 15) 100%);
+    --hover-blue: rgb(11, 97, 255);
+}
+
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    background: var(--bg);
+    font-family: 'Kanit', sans-serif;
+}
+
+/* TASKBAR */
+
+.taskbar{
+    position: absolute;
+    height: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    user-select: none;
+    display: flex;
+    background: var(--gray-double-gradient);
+    border-top: 1px solid rgb(187, 187, 187);
+}
+
+.taskbar-elements{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.taskbar-elements.left{
+    justify-content: flex-start;
+    flex: 1 1 0%;
+}
+
+.taskbar-elements.right{
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.startIcon{
+    object-fit: cover;
+    height: 38px;
+    width: 38px;
+    margin: 0px 10px 0px 4px;
+}
+
+.startIcon:hover{
+    filter: drop-shadow(white 0px 0px);
+}
+
+.startIcon:active{
+    filter: drop-shadow(rgb(90, 90, 90) 0px 0px);
+}
+
+.taskbar-divider{
+    display: flex;
+    height: 70%;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 100px;
+}
+
+.taskbar-divider.left{
+    justify-content: flex-start;
+    flex: 0 0 0%;
+    margin-right: 5px;
+}
+
+.taskbar-divider.right{
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
+.taskbar-time{
+    margin: 0px 15px 0px 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 67px;
+    font-size: 16px;
+    font-weight: lighter;
+    text-shadow: 3px 2px 3px black;
+}
+
+/* DESKTOP ICONS */
+
+.desktop{
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.desktop-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 25px;
+    user-select: none;
+}
+
+.desktop-icons.left{
+    margin-left: 25px;
+}
+
+.desktop-icons.left > *{
+    margin-bottom: 25px;
+}
+
+.desktop-github{
+    display: flex;
+    flex-flow: column;
+    max-width: 110px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-github:focus{
+    filter: drop-shadow(blue 0px 0px);
+}
+
+.desktop-github:focus .image{
+    opacity: 0.75;
+}
+
+.desktop-github:focus .text{
+    background-color: var(--hover-blue);
+}
+
+.desktop-github.image{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border: 0px solid white;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.desktop-github.text{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+    width: fit-content;
+    max-width: 110px;
+    height: fit-content;
+}
+
+.desktop-youtube{
+    display: flex;
+    flex-flow: column;
+    max-width: 110px;
+    max-height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-youtube:focus{
+    filter: drop-shadow(blue 0px 0px);
+}
+
+.desktop-youtube:focus .image{
+    opacity: 0.75;
+}
+
+.desktop-youtube:focus .text{
+    background-color: var(--hover-blue);
+}
+
+.desktop-youtube.image{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border: 0px solid white;
+    border-radius: 50px;
+    margin-bottom: 8px;
+}
+
+.desktop-youtube.text{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+    width: fit-content;
+    max-width: 110px;
+    height: fit-content;
+}
