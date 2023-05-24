@@ -1,5 +1,5 @@
 :root{
-    --bg: url('../res/tomofanatic.jpg') center center / cover no-repeat fixed;
+    --bg: url('../res/wallpapers/tomofanatic.jpg') center center / cover no-repeat fixed;
     --gray-double-gradient: linear-gradient(rgb(15, 15, 15) 0px, rgb(39, 39, 39) 50%, rgb(15, 15, 15) 100%);
     --hover-blue: rgb(11, 97, 255);
 }
