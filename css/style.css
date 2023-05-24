@@ -28,6 +28,7 @@ body{
 /* TASKBAR */
 
 .taskbar{
+    box-sizing: content-box;
     position: absolute;
     height: 45px;
     bottom: 0;
@@ -36,7 +37,7 @@ body{
     user-select: none;
     display: flex;
     background: var(--gray-double-gradient);
-    border-top: 1px solid rgb(187, 187, 187);
+    border-top: 2px solid rgb(255, 255, 255);
 }
 
 .taskbar-elements{
