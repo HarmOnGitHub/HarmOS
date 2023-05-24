@@ -125,7 +125,7 @@ body{
     margin-bottom: 25px;
 }
 
-.desktop-github{
+.desktop-icon-github{
     display: flex;
     flex-flow: column;
     max-width: 110px;
@@ -134,19 +134,19 @@ body{
     justify-content: center;
 }
 
-.desktop-github:focus{
+.desktop-icon-github:focus{
     filter: drop-shadow(blue 0px 0px);
 }
 
-.desktop-github:focus .image{
+.desktop-icon-github:focus .image{
     opacity: 0.75;
 }
 
-.desktop-github:focus .text{
+.desktop-icon-github:focus .text{
     background-color: var(--hover-blue);
 }
 
-.desktop-github.image{
+.desktop-icon-github.image{
     background-color: white;
     width: 70px;
     height: 70px;
@@ -155,7 +155,7 @@ body{
     margin-bottom: 8px;
 }
 
-.desktop-github.text{
+.desktop-icon-github.text{
     color: white;
     font-size: 16px;
     font-weight: lighter;
@@ -166,7 +166,7 @@ body{
     height: fit-content;
 }
 
-.desktop-youtube{
+.desktop-icon-youtube{
     display: flex;
     flex-flow: column;
     max-width: 110px;
@@ -175,19 +175,19 @@ body{
     justify-content: center;
 }
 
-.desktop-youtube:focus{
+.desktop-icon-youtube:focus{
     filter: drop-shadow(blue 0px 0px);
 }
 
-.desktop-youtube:focus .image{
+.desktop-icon-outube:focus .image{
     opacity: 0.75;
 }
 
-.desktop-youtube:focus .text{
+.desktop-icon-youtube:focus .text{
     background-color: var(--hover-blue);
 }
 
-.desktop-youtube.image{
+.desktop-icon-youtube.image{
     background-color: white;
     width: 70px;
     height: 70px;
@@ -196,7 +196,7 @@ body{
     margin-bottom: 8px;
 }
 
-.desktop-youtube.text{
+.desktop-icon-youtube.text{
     color: white;
     font-size: 16px;
     font-weight: lighter;

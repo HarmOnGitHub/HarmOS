@@ -1,14 +1,19 @@
-function openGitHub(e){
+function openLink(e){
     e.stopPropagation();
-    window.open("https://github.com/HarmOnGitHub/HarmOS",'_blank');
+    window.open(e.currentTarget.getAttribute('data-link'),'_blank');
 }
 
-function openYouTube(e){
-    e.stopPropagation();
-    window.open("https://youtube.com/@harm2382",'_blank');
+function discard(item){
+    
+    if(item.getAttribute('class').split(" ").length == 1){
+        desktopIcons.push(item);
+    }
 }
 
-var github = document.getElementsByClassName("desktop-github")[0];
-var yt = document.getElementsByClassName("desktop-youtube")[0];
-github.addEventListener("dblclick", openGitHub);
-yt.addEventListener("dblclick", openYouTube);
+var desktopIcons = [];
+
+document.querySelectorAll('[class^="desktop-icon-"]').forEach(discard);
+
+desktopIcons.forEach( (item) => {
+    item.addEventListener('dblclick',openLink,false);
+});
