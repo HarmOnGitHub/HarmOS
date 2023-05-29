@@ -13,7 +13,8 @@ function getTime(){
     if(minutes < 10){
         minutes = '0' + minutes;
     }
-    return hour + ':' + minutes + ' ' + hourPostFix;
+
+    return ((hour + ':' + minutes + ' ' + hourPostFix) + "\n" + (now.getMonth() + 1 + "/" + now.getDate() + "/" + now.getFullYear()));
 }
 
 var dt = document.getElementsByClassName('taskbar-time')[0];

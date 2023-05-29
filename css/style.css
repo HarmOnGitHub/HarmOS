@@ -90,14 +90,16 @@ body{
 }
 
 .taskbar-time{
-    margin: 0px 15px 0px 10px;
+    margin: 0px 10px 0px 10px;
     display: flex;
     justify-content: center;
     color: white;
     width: 67px;
-    font-size: 16px;
+    height: 45px;
+    font-size: 14px;
     font-weight: lighter;
     text-shadow: 3px 2px 3px black;
+    text-align: center;
 }
 
 /* DESKTOP ICONS */
